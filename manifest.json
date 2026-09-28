@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "无际 Edgeless",
+  "version": "0.3.1",
+  "description": "导出浙江大学智云课堂当前课次或整门课程逐字稿",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png",
+    "256": "icons/icon256.png",
+    "512": "icons/icon512.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/toolbar16.png",
+      "24": "icons/toolbar24.png",
+      "32": "icons/toolbar32.png"
+    },
+    "default_popup": "popup.html"
+  }
+}
