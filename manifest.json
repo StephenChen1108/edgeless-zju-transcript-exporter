@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "无际 Edgeless",
-  "version": "0.3.1",
-  "description": "导出浙江大学智云课堂当前课次或整门课程逐字稿",
+  "version": "0.4.0",
+  "description": "导出浙江大学智云课堂逐字稿与原始 PPT 课件",
   "permissions": ["activeTab", "scripting", "storage"],
   "icons": {
     "16": "icons/icon16.png",

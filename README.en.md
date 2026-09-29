@@ -1,34 +1,33 @@
 # Edgeless
 
-Edgeless is a Microsoft Edge extension for exporting available speech transcripts from Zhejiang University ZJU Cloud Classroom. Export the current lecture as Markdown, or collect available transcripts from a course into Markdown or a ZIP archive.
+Edgeless is a Microsoft Edge extension for browsing and exporting transcripts and original PPT files that you can access in Zhejiang University ZJU Cloud Classroom.
 
 ## Features
 
-- Export the current lecture transcript while preserving its text, order, and timestamps.
-- Export available transcripts for a course as one Markdown file or a ZIP archive.
-- Configure language, timestamps, metadata, filenames, ZIP contents, and theme. Preferences stay in browser storage.
-- Optionally include original PPT/PPTX files when the classroom endpoint explicitly provides them. This option is off by default.
-- Generate exports locally without loading remote scripts.
+- The **Current lecture** view shows separate transcript and PPT availability. Preview the full transcript or slide thumbnails, then export or download either resource independently.
+- The **Whole course** view lists lectures and their resources. Expand a lecture for its own preview and download actions, or select lectures for a batch export. Select all is supported.
+- Export selected course lectures as one Markdown file or a ZIP archive. ZIP settings control combined transcripts, per-lecture transcripts, an index, and PPT files. PPT inclusion is off by default.
+- Set the opening view, transcript language, timestamps, course metadata, filename format, default course export format, and theme. Preferences save automatically in browser storage.
+- Generate exports locally without loading remote scripts. PPT downloads require an original file from the classroom endpoint; slide previews require slide images from that endpoint.
 
-## Install from a release
+## Install
 
-1. Download `edgeless-edge-v0.3.1.zip` from [Releases](../../releases) and extract it.
-2. Open `edge://extensions`, enable Developer mode, and select **Load unpacked**.
-3. Select the extracted folder containing `manifest.json`.
+1. Download edgeless-edge-v0.4.0.zip from [Releases](../../releases) and extract it.
+2. Open edge://extensions, enable Developer mode, and select **Load unpacked**.
+3. Select the extracted edgeless-edge-v0.4.0 folder containing manifest.json.
 
 You can also load the repository root as an unpacked extension.
 
 ## Use
 
-Sign in to ZJU Cloud Classroom and open a lecture replay you can access. Open the speech-recognition panel, then select Edgeless from the Edge toolbar. Choose the current lecture or course export.
+Sign in to ZJU Cloud Classroom and open a replay or recorded lecture you can access. For transcripts, open the speech-recognition panel and let captions load. Open Edgeless from the Edge toolbar, then switch between the current lecture and whole course. Select the lectures you want in a course export.
 
-The extension cannot bypass classroom access controls. Course export requires the course identifier to be available from the replay page or its loaded requests.
+If no transcript is detected, keep the speech-recognition panel open, refresh the classroom page, and reopen the extension. The extension cannot bypass course access controls. Resource and PPT availability depends on the classroom endpoints.
 
 ## Privacy
 
-Course and transcript data are read from the active classroom page when you use the extension. Preferences are stored in browser storage, and export files are generated locally. The extension does not upload transcript content, cookies, or login information to a developer server. See [Privacy Policy](PRIVACY.md).
+Course and resource data are read from the active classroom page when you use the extension. Preferences are stored in browser storage, and export files are generated locally. The extension does not upload transcript content, cookies, or login information to a developer server. It requests course data from ZJU Cloud Classroom itself. See the [Privacy Policy](PRIVACY.md).
 
 ## License
 
-This repository currently has no project license. Public availability does not grant permission to redistribute or modify the project. Third-party dependency terms are included with the dependency.
-
+This repository currently has no project license. Public availability does not grant permission to redistribute or modify the project. Third-party dependency and icon terms are included in vendor/JSZip-LICENSE.markdown and icons/LUCIDE-LICENSE.
