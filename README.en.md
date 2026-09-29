@@ -9,12 +9,15 @@ Edgeless is a Microsoft Edge extension for browsing and exporting transcripts an
 - Export selected course lectures as one Markdown file or a ZIP archive. ZIP settings control combined transcripts, per-lecture transcripts, an index, and PPT files. PPT inclusion is off by default.
 - Set the opening view, transcript language, timestamps, course metadata, filename format, default course export format, and theme. Preferences save automatically in browser storage.
 - Generate exports locally without loading remote scripts. PPT downloads require an original file from the classroom endpoint; slide previews require slide images from that endpoint.
+- The extension manifest provides Simplified Chinese and English names and descriptions through standard `_locales` message files for Edge and Partner Center.
 
 ## Install
 
 1. Download edgeless-edge-v0.4.0.zip from [Releases](../../releases) and extract it.
 2. Open edge://extensions, enable Developer mode, and select **Load unpacked**.
-3. Select the extracted edgeless-edge-v0.4.0 folder containing manifest.json.
+3. Select the extracted folder containing manifest.json.
+
+The release ZIP has extension files at its root and can also be uploaded directly to Partner Center.
 
 You can also load the repository root as an unpacked extension.
 
